@@ -16,6 +16,6 @@ jobs:
           image: drupal9ci
           tags: latest
           registry: ghcr.io
-          githubOrg: lullabot
+          githubOrg: welly
           username: ${{ github.actor }}
-          password: ${{ secrets.GH_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
