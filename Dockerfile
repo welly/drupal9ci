@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
   vim \
   wget && \
   docker-php-ext-install bcmath && \
+  docker-php-ext-install intl && \
   docker-php-ext-install mysqli && \
   docker-php-ext-install pdo && \
   docker-php-ext-install pdo_mysql
