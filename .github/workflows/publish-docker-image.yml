@@ -18,4 +18,4 @@ jobs:
           registry: ghcr.io
           githubOrg: lullabot
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.GH_TOKEN }}
