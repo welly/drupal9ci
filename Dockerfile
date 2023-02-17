@@ -26,7 +26,7 @@ RUN rm -rf ..?* .[!.]* *
 COPY scripts/composer-installer.sh /tmp/composer-installer.sh
 RUN chmod +x /tmp/composer-installer.sh && \
     /tmp/composer-installer.sh && \
-    mv composer.phar /usr/local/bin/composer && \
+    mv composer.phar /usr/local/bin/composer
 
 # Put a turbo on composer.
 RUN composer global require hirak/prestissimo
