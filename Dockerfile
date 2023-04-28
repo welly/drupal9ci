@@ -27,6 +27,7 @@ COPY scripts/composer-installer.sh /tmp/composer-installer.sh
 RUN chmod +x /tmp/composer-installer.sh && \
     /tmp/composer-installer.sh && \
     mv composer.phar /usr/local/bin/composer
+    composer self-update --2
 
 # Install XDebug.
 RUN pecl install xdebug && \
